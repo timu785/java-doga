@@ -1,0 +1,27 @@
+ma:
+-mvc alapjai (csak fájlrendszer)
+-gui (csak kinézetre)
+-több commit
+-git ignore?
+
+feladat:
+-light on (le kell kapcsolni az összes lámpát)
+
+
+
+
+
+
+
+
+holnap:
+kód
+
+
+
+
+
+
+
+
+
