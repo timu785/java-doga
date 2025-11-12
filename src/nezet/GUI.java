@@ -65,6 +65,42 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // getterek helye
+    public JButton getLampa1()
+    {
+        return Lampa1;
+    }
+    public JButton getLampa2()
+    {
+        return Lampa2;
+    }
+    public JButton getLampa3()
+    {
+        return Lampa3;
+    }
+    public JButton getLampa4()
+    {
+        return Lampa4;
+    }
+    public JButton getLampa5()
+    {
+        return Lampa5;
+    }
+    public JButton getLampa6()
+    {
+        return Lampa6;
+    }
+    public JButton getLampa7()
+    {
+        return Lampa7;
+    }
+    public JButton getLampa8()
+    {
+        return Lampa8;
+    }
+    public JButton getLampa9()
+    {
+        return Lampa9;
+    }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
