@@ -21,6 +21,10 @@ public class Nezet extends javax.swing.JFrame {
         Lampa6 = new javax.swing.JButton();
         Lampa7 = new javax.swing.JButton();
         Lampa8 = new javax.swing.JButton();
+        jMenuBar = new javax.swing.JMenuBar();
+        jMenuUj = new javax.swing.JMenu();
+        jMenuMentes = new javax.swing.JMenu();
+        jMenuBetoltes = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LIGHT ON!            Kapcsold le az összes lámpát!");
@@ -45,7 +49,7 @@ public class Nezet extends javax.swing.JFrame {
         Lampa4.setText("4");
         getContentPane().add(Lampa4);
 
-        Lampa5.setBackground(new java.awt.Color(60, 60, 60));
+        Lampa5.setBackground(new java.awt.Color(204, 0, 153));
         Lampa5.setText("5");
         getContentPane().add(Lampa5);
 
@@ -60,6 +64,17 @@ public class Nezet extends javax.swing.JFrame {
         Lampa8.setBackground(new java.awt.Color(60, 60, 60));
         Lampa8.setText("8");
         getContentPane().add(Lampa8);
+
+        jMenuUj.setText("új");
+        jMenuBar.add(jMenuUj);
+
+        jMenuMentes.setText("mentés");
+        jMenuBar.add(jMenuMentes);
+
+        jMenuBetoltes.setText("betöltés");
+        jMenuBar.add(jMenuBetoltes);
+
+        setJMenuBar(jMenuBar);
 
         pack();
         setLocationRelativeTo(null);
@@ -113,5 +128,9 @@ public class Nezet extends javax.swing.JFrame {
     private javax.swing.JButton Lampa6;
     private javax.swing.JButton Lampa7;
     private javax.swing.JButton Lampa8;
+    private javax.swing.JMenuBar jMenuBar;
+    private javax.swing.JMenu jMenuBetoltes;
+    private javax.swing.JMenu jMenuMentes;
+    private javax.swing.JMenu jMenuUj;
     // End of variables declaration//GEN-END:variables
 }
