@@ -3,6 +3,7 @@ package nezet;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 
 public class Nezet extends javax.swing.JFrame {
@@ -24,9 +25,10 @@ public class Nezet extends javax.swing.JFrame {
         Lampa7 = new javax.swing.JButton();
         Lampa8 = new javax.swing.JButton();
         jMenuBar = new javax.swing.JMenuBar();
-        jMenuUj = new javax.swing.JMenu();
-        jMenuMentes = new javax.swing.JMenu();
-        jMenuBetoltes = new javax.swing.JMenu();
+        jMenu = new javax.swing.JMenu();
+        jMenuItemUj = new javax.swing.JMenuItem();
+        jMenuItemMentes = new javax.swing.JMenuItem();
+        jMenuItemBetoltes = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("LIGHT ON!            Kapcsold le az összes lámpát!");
@@ -72,14 +74,18 @@ public class Nezet extends javax.swing.JFrame {
         Lampa8.setText("8");
         getContentPane().add(Lampa8);
 
-        jMenuUj.setText("új");
-        jMenuBar.add(jMenuUj);
+        jMenu.setText("Menu");
 
-        jMenuMentes.setText("mentés");
-        jMenuBar.add(jMenuMentes);
+        jMenuItemUj.setText("Új");
+        jMenu.add(jMenuItemUj);
 
-        jMenuBetoltes.setText("betöltés");
-        jMenuBar.add(jMenuBetoltes);
+        jMenuItemMentes.setText("Mentés");
+        jMenu.add(jMenuItemMentes);
+
+        jMenuItemBetoltes.setText("Betöltés");
+        jMenu.add(jMenuItemBetoltes);
+
+        jMenuBar.add(jMenu);
 
         setJMenuBar(jMenuBar);
 
@@ -103,16 +109,16 @@ public class Nezet extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_formWindowClosing
 
-    public JMenu getJMenuUj() {
-        return jMenuUj;
+    public JMenuItem getUj(){
+        return jMenuItemUj;
     }
     
-    public JMenu getJMenuMentes() {
-        return jMenuMentes;
+    public JMenuItem getMentes(){
+        return jMenuItemMentes;
     }
     
-    public JMenu getJMenuBetoltes() {
-        return jMenuBetoltes;
+    public JMenuItem getBetoltes(){
+        return jMenuItemBetoltes;
     }
     
     public JButton getLampaX(int x){
@@ -163,9 +169,10 @@ public class Nezet extends javax.swing.JFrame {
     private javax.swing.JButton Lampa6;
     private javax.swing.JButton Lampa7;
     private javax.swing.JButton Lampa8;
+    private javax.swing.JMenu jMenu;
     private javax.swing.JMenuBar jMenuBar;
-    private javax.swing.JMenu jMenuBetoltes;
-    private javax.swing.JMenu jMenuMentes;
-    private javax.swing.JMenu jMenuUj;
+    private javax.swing.JMenuItem jMenuItemBetoltes;
+    private javax.swing.JMenuItem jMenuItemMentes;
+    private javax.swing.JMenuItem jMenuItemUj;
     // End of variables declaration//GEN-END:variables
 }

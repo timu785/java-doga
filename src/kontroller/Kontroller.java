@@ -15,6 +15,7 @@ public class Kontroller {
         nezet.setVisible(true);
         this.megjelenit();
         this.lampaGombok();
+        this.menuGombok();
     }
     
     public void megjelenit() {
@@ -37,5 +38,23 @@ public class Kontroller {
                 System.out.println(model.nyert());
             });
         }
+    }
+    
+    public void menuGombok() {
+        nezet.getUj().addActionListener((ActionEvent e) -> {
+            System.out.println("uj gomb megnyomva");
+            this.model = new Model();
+            this.megjelenit();
+        });
+        
+        nezet.getMentes().addActionListener((ActionEvent e) -> {
+            System.out.println("mentés gomb megnyomva");
+
+        });
+        
+        nezet.getBetoltes().addActionListener((ActionEvent e) -> {
+            System.out.println("betöltés gomb megnyomva");
+
+        });
     }
 }
