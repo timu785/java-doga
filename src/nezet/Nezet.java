@@ -65,6 +65,18 @@ public class Nezet extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // getterek helye
+    public JButton getLampaX(int x){
+        if (x == 1) { return Lampa1; }
+        else if (x == 2) { return Lampa2; }
+        else if (x == 3) { return Lampa3; }
+        else if (x == 4) { return Lampa4; }
+        else if (x == 5) { return Lampa5; }
+        else if (x == 6) { return Lampa6; }
+        else if (x == 7) { return Lampa7; }
+        else if (x == 8) { return Lampa8; }
+        else if (x == 9) { return Lampa9; }
+        else return new JButton();
+    }    
     public JButton getLampa1()
     {
         return Lampa1;
