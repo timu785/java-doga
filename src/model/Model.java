@@ -9,15 +9,9 @@ public class Model {
     
     public Model() {
         lampak = new ArrayList<>();
-        lampak.add(new LampaModel());
-        lampak.add(new LampaModel());
-        lampak.add(new LampaModel());
-        lampak.add(new LampaModel());
-        lampak.add(new LampaModel());
-        lampak.add(new LampaModel());   
-        lampak.add(new LampaModel());
-        lampak.add(new LampaModel());
-        lampak.add(new LampaModel());
+        for (int i = 0; i < 9; i++) {
+            lampak.add(new LampaModel());
+        }
     }
     
     public List<LampaModel> getLampak() {

@@ -109,6 +109,10 @@ public class Nezet extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_formWindowClosing
 
+    public void nyeresUzenet() {
+        JOptionPane.showMessageDialog(null, "Ön nyert!");
+    }
+    
     public JMenuItem getUj(){
         return jMenuItemUj;
     }

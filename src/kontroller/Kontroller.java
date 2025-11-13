@@ -35,7 +35,9 @@ public class Kontroller {
             nezet.getLampaX(i).addActionListener((ActionEvent e) -> {
                 model.kapcsolX(index);
                 megjelenit();
-                System.out.println(model.nyert());
+                if(model.nyert()){
+                    nezet.nyeresUzenet();
+                }
             });
         }
     }
