@@ -32,6 +32,7 @@ public class Nezet extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("LIGHT ON!            Kapcsold le az összes lámpát!");
+        setBackground(new java.awt.Color(204, 204, 204));
         setPreferredSize(new java.awt.Dimension(600, 600));
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -41,38 +42,40 @@ public class Nezet extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new java.awt.GridLayout(3, 3));
 
-        Lampa0.setText("0");
+        Lampa0.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa0);
 
-        Lampa1.setText("1");
+        Lampa1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa1);
 
-        Lampa2.setText("2");
+        Lampa2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa2);
 
         Lampa3.setBackground(new java.awt.Color(60, 60, 60));
-        Lampa3.setText("3");
+        Lampa3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa3);
 
         Lampa4.setBackground(new java.awt.Color(60, 60, 60));
-        Lampa4.setText("4");
+        Lampa4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa4);
 
         Lampa5.setBackground(new java.awt.Color(204, 0, 153));
-        Lampa5.setText("5");
+        Lampa5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa5);
 
         Lampa6.setBackground(new java.awt.Color(60, 60, 60));
-        Lampa6.setText("6");
+        Lampa6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa6);
 
         Lampa7.setBackground(new java.awt.Color(60, 60, 60));
-        Lampa7.setText("7");
+        Lampa7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa7);
 
         Lampa8.setBackground(new java.awt.Color(60, 60, 60));
-        Lampa8.setText("8");
+        Lampa8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Lampa8);
+
+        jMenuBar.setBackground(new java.awt.Color(204, 204, 204));
 
         jMenu.setText("Menu");
 
