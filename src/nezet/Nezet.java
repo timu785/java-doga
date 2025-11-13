@@ -11,6 +11,7 @@ public class Nezet extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Lampa0 = new javax.swing.JButton();
         Lampa1 = new javax.swing.JButton();
         Lampa2 = new javax.swing.JButton();
         Lampa3 = new javax.swing.JButton();
@@ -19,7 +20,6 @@ public class Nezet extends javax.swing.JFrame {
         Lampa6 = new javax.swing.JButton();
         Lampa7 = new javax.swing.JButton();
         Lampa8 = new javax.swing.JButton();
-        Lampa9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LIGHT ON!            Kapcsold le az összes lámpát!");
@@ -27,12 +27,16 @@ public class Nezet extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(3, 3));
 
+        Lampa0.setText("0");
+        getContentPane().add(Lampa0);
+
         Lampa1.setText("1");
         getContentPane().add(Lampa1);
 
         Lampa2.setText("2");
         getContentPane().add(Lampa2);
 
+        Lampa3.setBackground(new java.awt.Color(60, 60, 60));
         Lampa3.setText("3");
         getContentPane().add(Lampa3);
 
@@ -56,17 +60,14 @@ public class Nezet extends javax.swing.JFrame {
         Lampa8.setText("8");
         getContentPane().add(Lampa8);
 
-        Lampa9.setBackground(new java.awt.Color(60, 60, 60));
-        Lampa9.setText("9");
-        getContentPane().add(Lampa9);
-
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     // getterek helye
     public JButton getLampaX(int x){
-        if (x == 1) { return Lampa1; }
+        if (x == 0) { return Lampa0; }
+        else if (x == 1) { return Lampa1; }
         else if (x == 2) { return Lampa2; }
         else if (x == 3) { return Lampa3; }
         else if (x == 4) { return Lampa4; }
@@ -74,48 +75,48 @@ public class Nezet extends javax.swing.JFrame {
         else if (x == 6) { return Lampa6; }
         else if (x == 7) { return Lampa7; }
         else if (x == 8) { return Lampa8; }
-        else if (x == 9) { return Lampa9; }
         else return new JButton();
     }    
     public JButton getLampa1()
     {
-        return Lampa1;
+        return Lampa0;
     }
     public JButton getLampa2()
     {
-        return Lampa2;
+        return Lampa1;
     }
     public JButton getLampa3()
     {
-        return Lampa3;
+        return Lampa2;
     }
     public JButton getLampa4()
     {
-        return Lampa4;
+        return Lampa3;
     }
     public JButton getLampa5()
     {
-        return Lampa5;
+        return Lampa4;
     }
     public JButton getLampa6()
     {
-        return Lampa6;
+        return Lampa5;
     }
     public JButton getLampa7()
     {
-        return Lampa7;
+        return Lampa6;
     }
     public JButton getLampa8()
     {
-        return Lampa8;
+        return Lampa7;
     }
     public JButton getLampa9()
     {
-        return Lampa9;
+        return Lampa8;
     }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Lampa0;
     private javax.swing.JButton Lampa1;
     private javax.swing.JButton Lampa2;
     private javax.swing.JButton Lampa3;
@@ -124,6 +125,5 @@ public class Nezet extends javax.swing.JFrame {
     private javax.swing.JButton Lampa6;
     private javax.swing.JButton Lampa7;
     private javax.swing.JButton Lampa8;
-    private javax.swing.JButton Lampa9;
     // End of variables declaration//GEN-END:variables
 }

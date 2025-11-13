@@ -20,7 +20,7 @@ public class Kontroller {
     public void megjelenit() {
         for (int i = 0; i < model.getLampak().size(); i++) {
             if(model.getLampak().get(i).getFelkapcsolva() == true){
-                nezet.getLampaX(i).setBackground(Color.GREEN);
+                nezet.getLampaX(i).setBackground(Color.WHITE);
             }
             else{
                 nezet.getLampaX(i).setBackground(Color.GRAY);
