@@ -51,12 +51,13 @@ public class Kontroller {
         
         nezet.getMentes().addActionListener((ActionEvent e) -> {
             System.out.println("mentés gomb megnyomva");
-
+            model.mentes();
         });
         
         nezet.getBetoltes().addActionListener((ActionEvent e) -> {
             System.out.println("betöltés gomb megnyomva");
-
+            model.betoltes();
+            this.megjelenit();
         });
     }
 }

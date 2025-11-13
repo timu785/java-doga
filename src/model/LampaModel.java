@@ -10,6 +10,10 @@ public class LampaModel {
         this.felkapcsolva = rnd.nextInt(2) == 0;
     }
     
+    public LampaModel(boolean felkapcsolva) {
+        this.felkapcsolva = felkapcsolva;
+    }
+    
     public void kapcsol() {
         this.felkapcsolva = !this.felkapcsolva;
     }

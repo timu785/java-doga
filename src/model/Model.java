@@ -1,7 +1,11 @@
 package model;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import model.LampaModel;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Model {
@@ -83,5 +87,48 @@ public class Model {
             }
         }
         return nyert;
+    }
+    
+    public void mentes() {
+        System.out.println("model mentes...");
+        String tartalom = "";
+        for (int i = 0; i < this.lampak.size()-1; i++) {
+            tartalom += String.valueOf(this.lampak.get(i).getFelkapcsolva()) + "#";
+        }
+        tartalom += String.valueOf(this.lampak.get(this.lampak.size()-1).getFelkapcsolva());
+        System.out.println(tartalom);
+        
+        Path filePath = Path.of("adat.txt");
+
+        try {
+            Files.writeString(filePath, tartalom);
+            System.out.println("Fájl sikeresen mentve!");
+        } catch (IOException e) {
+            System.out.println("Fájl mentés sikertelen!");
+        }
+    }
+    
+    public void betoltes() {
+        System.out.println("model betoltes...");
+        Path filePath = Path.of("adat.txt");
+        String tartalom = "asd";
+        
+        try {
+            tartalom = Files.readString(filePath);
+        } catch (IOException e) {
+            System.out.println("Fájl beolvasás sikertelen!");
+        }
+        
+        System.out.println(tartalom);
+        
+        String[] darabok = tartalom.split("#");
+        ArrayList<String> darabok2 = new ArrayList<>(Arrays.asList(darabok));
+        System.out.println(darabok2);
+        
+        lampak = new ArrayList<>();
+        for (int i = 0; i < 9; i++) {
+            lampak.add(new LampaModel(Boolean.parseBoolean(darabok2.get(i))));
+        }
+        
     }
 }
