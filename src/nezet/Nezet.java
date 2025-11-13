@@ -2,6 +2,7 @@ package nezet;
 
 import java.awt.Color;
 import javax.swing.JButton;
+import javax.swing.JMenu;
 
 public class Nezet extends javax.swing.JFrame {
     public Nezet() {
@@ -80,6 +81,18 @@ public class Nezet extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    public JMenu getJMenuUj() {
+        return jMenuUj;
+    }
+    
+    public JMenu getJMenuMentes() {
+        return jMenuMentes;
+    }
+    
+    public JMenu getJMenuBetoltes() {
+        return jMenuBetoltes;
+    }
+    
     public JButton getLampaX(int x){
         if (x == 0) { return Lampa0; }
         else if (x == 1) { return Lampa1; }
