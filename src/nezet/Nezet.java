@@ -3,6 +3,7 @@ package nezet;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JMenu;
+import javax.swing.JOptionPane;
 
 public class Nezet extends javax.swing.JFrame {
     public Nezet() {
@@ -27,10 +28,15 @@ public class Nezet extends javax.swing.JFrame {
         jMenuMentes = new javax.swing.JMenu();
         jMenuBetoltes = new javax.swing.JMenu();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("LIGHT ON!            Kapcsold le az összes lámpát!");
         setPreferredSize(new java.awt.Dimension(600, 600));
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
         getContentPane().setLayout(new java.awt.GridLayout(3, 3));
 
         Lampa0.setText("0");
@@ -80,6 +86,22 @@ public class Nezet extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        int valasz = JOptionPane.showConfirmDialog(
+            null,
+            "Biztosan ki akarsz lépni?",
+            "Kilépés megerősítése",
+            JOptionPane.YES_NO_OPTION
+        );
+
+        if (valasz == JOptionPane.YES_OPTION) {
+            System.out.println("Kilépés...");
+            System.exit(0);
+        } else {
+            System.out.println("Mégsem lépünk ki.");
+        }
+    }//GEN-LAST:event_formWindowClosing
 
     public JMenu getJMenuUj() {
         return jMenuUj;
