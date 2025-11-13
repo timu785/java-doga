@@ -7,7 +7,9 @@ ma:
 feladat:
 -light on (le kell kapcsolni az összes lámpát)
 -mi történik, ha lekapcsoljuk az összes lámpát? (egy popup window a terv)
-
+-tudjunk újat indítani.
+-mentés, betöltés,
+-kilépés
 
 
 
