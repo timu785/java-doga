@@ -2,6 +2,8 @@ package main;
 
 import java.awt.Color;
 import javax.swing.JButton;
+import kontroller.Kontroller;
+import model.Model;
 import nezet.Nezet;
 
 public class Program {
@@ -10,14 +12,11 @@ public class Program {
           
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                Model model = new Model();
+                
                 Nezet nezet = new Nezet();
-                nezet.setVisible(true);
                 
-                JButton lampa1 = nezet.getLampa1();
-                lampa1.setBackground(Color.yellow);
-                
-                JButton lampa2 = nezet.getLampa2();
-                lampa2.setBackground(Color.DARK_GRAY);
+                Kontroller kontroller = new Kontroller(model, nezet);    
                 
             }
         });

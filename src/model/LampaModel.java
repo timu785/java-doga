@@ -1,12 +1,12 @@
-package modell;
+package model;
 
 import java.util.Random;
 
-public class LampaModell {
+public class LampaModel {
     private boolean felkapcsolva;
     private final static Random rnd = new Random();
     
-    public LampaModell() {
+    public LampaModel() {
         this.felkapcsolva = rnd.nextInt(2) == 0;
     }
     

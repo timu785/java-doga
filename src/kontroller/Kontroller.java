@@ -1,15 +1,20 @@
 package kontroller;
 
-import modell.Modell;
+import model.Model;
 import nezet.Nezet;
 
 public class Kontroller {
-    private Modell modell;
+    private Model modell;
     private Nezet nezet;
     
-    public Kontroller(Modell modell, Nezet nezet) {
+    public Kontroller(Model modell, Nezet nezet) {
         this.modell = modell;
         this.nezet = nezet;
         nezet.setVisible(true);
+        this.feladat();
+    }
+    
+    public void feladat() {
+        
     }
 }
