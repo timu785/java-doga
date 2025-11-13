@@ -1,5 +1,6 @@
 package nezet;
 
+import java.awt.Color;
 import javax.swing.JButton;
 
 public class Nezet extends javax.swing.JFrame {
@@ -64,7 +65,6 @@ public class Nezet extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    // getterek helye
     public JButton getLampaX(int x){
         if (x == 0) { return Lampa0; }
         else if (x == 1) { return Lampa1; }
@@ -77,41 +77,29 @@ public class Nezet extends javax.swing.JFrame {
         else if (x == 8) { return Lampa8; }
         else return new JButton();
     }    
-    public JButton getLampa1()
-    {
-        return Lampa0;
+    
+    public void felKapcsolX(int x){
+        if (x == 0) { Lampa0.setBackground(Color.WHITE); }
+        else if (x == 1) { Lampa1.setBackground(Color.WHITE); }
+        else if (x == 2) { Lampa2.setBackground(Color.WHITE); }
+        else if (x == 3) { Lampa3.setBackground(Color.WHITE); }
+        else if (x == 4) { Lampa4.setBackground(Color.WHITE); }
+        else if (x == 5) { Lampa5.setBackground(Color.WHITE); }
+        else if (x == 6) { Lampa6.setBackground(Color.WHITE); }
+        else if (x == 7) { Lampa7.setBackground(Color.WHITE); }
+        else if (x == 8) { Lampa8.setBackground(Color.WHITE); }
     }
-    public JButton getLampa2()
-    {
-        return Lampa1;
-    }
-    public JButton getLampa3()
-    {
-        return Lampa2;
-    }
-    public JButton getLampa4()
-    {
-        return Lampa3;
-    }
-    public JButton getLampa5()
-    {
-        return Lampa4;
-    }
-    public JButton getLampa6()
-    {
-        return Lampa5;
-    }
-    public JButton getLampa7()
-    {
-        return Lampa6;
-    }
-    public JButton getLampa8()
-    {
-        return Lampa7;
-    }
-    public JButton getLampa9()
-    {
-        return Lampa8;
+    
+    public void leKapcsolX(int x){
+        if (x == 0) { Lampa0.setBackground(Color.GRAY); }
+        else if (x == 1) { Lampa1.setBackground(Color.GRAY); }
+        else if (x == 2) { Lampa2.setBackground(Color.GRAY); }
+        else if (x == 3) { Lampa3.setBackground(Color.GRAY); }
+        else if (x == 4) { Lampa4.setBackground(Color.GRAY); }
+        else if (x == 5) { Lampa5.setBackground(Color.GRAY); }
+        else if (x == 6) { Lampa6.setBackground(Color.GRAY); }
+        else if (x == 7) { Lampa7.setBackground(Color.GRAY); }
+        else if (x == 8) { Lampa8.setBackground(Color.GRAY); }
     }
     
 
