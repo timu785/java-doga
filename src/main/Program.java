@@ -2,7 +2,7 @@ package main;
 
 import java.awt.Color;
 import javax.swing.JButton;
-import nezet.GUI;
+import nezet.Nezet;
 
 public class Program {
     
@@ -10,7 +10,7 @@ public class Program {
           
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                GUI nezet = new GUI();
+                Nezet nezet = new Nezet();
                 nezet.setVisible(true);
                 
                 JButton lampa1 = nezet.getLampa1();

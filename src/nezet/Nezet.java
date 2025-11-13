@@ -2,8 +2,8 @@ package nezet;
 
 import javax.swing.JButton;
 
-public class GUI extends javax.swing.JFrame {
-    public GUI() {
+public class Nezet extends javax.swing.JFrame {
+    public Nezet() {
         initComponents();
     }
 
